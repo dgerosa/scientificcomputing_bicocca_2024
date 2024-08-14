@@ -2,7 +2,7 @@
 # Scientific Computing with Python
 
 [Davide Gerosa](https://davidegerosa.com/)  - davide.gerosa@unimib.it  
-University of Milano-Bicocca, 2023-2024.
+University of Milano-Bicocca, 2024-2025.
 
 ## Aims
 
@@ -63,17 +63,7 @@ For students at Milano-Bicocca, recordings are available at [elearning.unimib.it
 
 ### Schedule
 
-Here is our timetable:
-
-1. Tue Nov 21, 2023 - 10.30-12.30 - Room U2.06
-2. Mon Nov 27, 2023 - 10.30-12.30 - Room U4.06
-3. Tue Nov 28, 2023 - 10.30-12.30 - Room U2.06
-4. Mon Dec 4, 2023 - 10.30-12.30 - Room U4.06
-5. Tue Dec 5, 2023 - 10.30-12.30 - Room U4.07
-6. Mon Jan 8, 2024 - 10.30-12.30 - Room U4.06
-7. Tue Jan 9, 2024- 10.30-12.30 - Room U4.06
-8. Mon Jan 15, 2024 - 10.30-12.30 - Room U2.04
-9. Tue Jan 16, 2024 - 10.30-12.30 - Room U4.06 (backup slot in case we need to skip one lecture) 
+TBC
 
 ### Prerequisites
 
@@ -94,7 +84,7 @@ In general, I'm always happy to chat coding and science with you. My office is r
 
 ## Credits
 
-This class is built on top of that taught by [Michael Zingale](https://github.com/zingale) at Stony Brook University: [https://sbu-python-class.github.io](https://sbu-python-class.github.io/python-science/Introduction.html) with changes and additions from a number of other sources. 
+This class is built on top of that taught by [Michael Zingale](https://github.com/zingale) at Stony Brook University: [https://sbu-python-class.github.io](https://sbu-python-class.github.io/python-science/Introduction.html) with changes and additions from a number of other sources, some from myself. 
 
 ## Careful... 
 
