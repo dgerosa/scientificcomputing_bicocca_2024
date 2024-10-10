@@ -63,6 +63,8 @@ For students at Milano-Bicocca, recordings are available at [elearning.unimib.it
 
 ### Schedule
 
+Here is our schedule:
+
 1. Mon Nov 18, 2024 - 10.30-12.30 - Room U4.07
 2. Wed Nov 20, 2024 - 10.30-12.30 - Room U4.06
 3. Fri Nov 22, 2024 - 10.30-12.30 - Room U4.05
@@ -72,6 +74,9 @@ For students at Milano-Bicocca, recordings are available at [elearning.unimib.it
 7. Mon Dec 2, 2024- 10.30-12.30 - Room U4.06
 8. Wed Dec 4, 2024 - 10.30-12.30 - Room U4.06
 9. Fri Dec 6, 2024 - 10.30-12.30 - Room U2.04 (backup slot in case we need to skip one lecture) 
+
+This is a Google calendar with these dates, which you can import into your own calendar:
+https://calendar.google.com/calendar/u/0?cid=MWM1MTI4NjFkOWNhNDY4NmVkZDhmZmRmNmJlY2U0OTViMTFhNGE3NjRlZDA0NWIxZjgwOWM5ZWYwZjE5MDNmNUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t
 
 ### Prerequisites
 
