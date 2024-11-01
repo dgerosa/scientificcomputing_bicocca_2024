@@ -40,7 +40,7 @@ There are infinitely many textbooks on scientific computing. Here are three that
 2. This one is more advanced. It's ideal for sharpening your existing Python skills and go the extra mile. Instead of keep on coding the same way, as some point you'll need to do it better. It's one of my go-to references when looking for a specific package/topic/task.
     - *["Scientific Computing with Python: High-performance scientific computing with NumPy, SciPy, and pandas"](https://www.packtpub.com/product/scientific-computing-with-python-second-edition/9781838822323), C. Fuhrer, O. Verdier, J. E., Packt Publishing, 2021. Supporting [code](https://github.com/PacktPublishing/Scientific-Computing-with-Python-Second-Edition).*
 
-3. Perhaps a bit outdated, but the really nice thing about this textbook is that has a bit of everything you might need for science, not just python. Things like command line operations, data visualization, regular expressions, version control, debugging, latex, etc). This book is a perfect companion when starting your PhD.
+3. Perhaps a bit outdated, but the really nice thing about this textbook is that has a bit of everything you might need for science, not just python. Things like command line operations, data visualization, regular expressions, version control, debugging, latex, etc. This book is a perfect companion when starting your PhD.
     - *["Effective Computation in Physics"](https://www.oreilly.com/library/view/effective-computation-in/9781491901564/), A. Scopatz, K. D. Huff, O'Reilly Media, 2015.*
 
 ### Classes
