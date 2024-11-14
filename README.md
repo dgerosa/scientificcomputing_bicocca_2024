@@ -6,7 +6,7 @@ University of Milano-Bicocca, 2024-2025.
 
 ## Aims
 
-The python programming language and its library ecosystem are essential tools in modern science. This class provides an advanced introduction to python and its main functionalities, focusing in particular on its applications to computational physics. Targeted topics include: array vectorization with numpy, pretty plotting with matplotlib, scientific recipes with scipy, just-in-time compilating with numba, module packaging, and unit testing. I will also introduce other essential computational tools, notably Mathematica for symbolic manipulation and git for version control. The format will be highly interactive and tailored to the research interests of the participants.
+The python programming language and its library ecosystem are essential tools in modern science. This class provides an advanced overview of python and its main functionalities, focusing in particular on its applications to computational physics. Targeted topics include: array vectorization with numpy, pretty plotting with matplotlib, scientific recipes with scipy, just-in-time compilation with numba, module packaging, and unit testing. I will also introduce other essential computational tools, notably Mathematica for symbolic manipulation and git for version control. The format will be highly interactive and tailored to the research interests of the participants.
 
 ## Lectures
 
@@ -40,7 +40,7 @@ There are infinitely many textbooks on scientific computing. Here are three that
 2. This one is more advanced. It's ideal for sharpening your existing Python skills and go the extra mile. Instead of keep on coding the same way, as some point you'll need to do it better. It's one of my go-to references when looking for a specific package/topic/task.
     - *["Scientific Computing with Python: High-performance scientific computing with NumPy, SciPy, and pandas"](https://www.packtpub.com/product/scientific-computing-with-python-second-edition/9781838822323), C. Fuhrer, O. Verdier, J. E., Packt Publishing, 2021. Supporting [code](https://github.com/PacktPublishing/Scientific-Computing-with-Python-Second-Edition).*
 
-3. Perhaps a bit outdated, but the really nice thing about this textbook is that has a bit of everything you might need for science, not just python. Things like command line operations, data visualization, regular expressions, version control, debugging, latex, etc). This book is a perfect companion when starting your PhD.
+3. Perhaps a bit outdated, but the really nice thing about this textbook is that has a bit of everything you might need for science, not just python. Things like command line operations, data visualization, regular expressions, version control, debugging, latex, etc. This book is a perfect companion when starting your PhD.
     - *["Effective Computation in Physics"](https://www.oreilly.com/library/view/effective-computation-in/9781491901564/), A. Scopatz, K. D. Huff, O'Reilly Media, 2015.*
 
 ### Classes
@@ -57,13 +57,30 @@ Here are some classes similar to this one which you might find useful:
 
 ### Recordings
 
-For students at Milano-Bicocca, recordings are available at [elearning.unimib.it/course/view.php?id=53206](https://elearning.unimib.it/course/view.php?id=53206)
+For students at Milano-Bicocca, recordings are available at [elearning.unimib.it/course/view.php?id=58494](https://elearning.unimib.it/course/view.php?id=58494)
 
 ## Logistics:
 
 ### Schedule
 
+<<<<<<< HEAD
 TBC
+=======
+Here is our schedule:
+
+1. Mon Nov 18, 2024 - 10.30-12.30 - Room U4.07
+2. Wed Nov 20, 2024 - 14.30-16.30 - Room U2.02
+3. Fri Nov 22, 2024 - 10.30-12.30 - Room U4.05
+4. Mon Nov 25, 2024 - 10.30-12.30 - Room U1.11
+5. Wed Nov 27, 2024 - 10.30-12.30 - Room U1.11
+6. Fri Nov 29, 2024 - 10.30-12.30 - Room U6.03
+7. Mon Dec 2, 2024- 10.30-12.30 - Room U4.06
+8. Wed Dec 4, 2024 - 10.30-12.30 - Room U4.06
+9. Fri Dec 6, 2024 - 10.30-12.30 - Room U2.04 (backup slot in case we need to skip one lecture) 
+
+[Here is a Google calendar](https://calendar.google.com/calendar/embed?src=1c512861d9ca4686edd8ffdf6bece495b11a4a764ed045b1f809c9ef0f1903f5%40group.calendar.google.com&ctz=Europe%2FRome) with these dates, which you can import into your own calendar.
+
+>>>>>>> 7904ce476ae135d708f587f2f1bfc8d3f3d56f24
 
 ### Prerequisites
 
