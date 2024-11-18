@@ -89,19 +89,20 @@ def time_report():
 
 
 if __name__ == "__main__":
+    print('hello')
     a = Timer('1')
     a.begin()
-    time.sleep(10.)
+    time.sleep(1.)
     a.end()
 
     b = Timer('2')
     b.begin()
-    time.sleep(5.)
+    time.sleep(1.)
 
     c = Timer('3')
     c.begin()
 
-    time.sleep(20.)
+    time.sleep(2.)
 
     b.end()
     c.end()
