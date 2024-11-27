@@ -1,0 +1,17 @@
+In[1]:=
+(*Q3*)
+(*author: Sara Gamba*)
+(*Function*)
+f[x_] := Sin[x] Exp[-x]
+
+(*Indefinite integral*)
+int = Integrate[f[x], x]
+
+(*Integral derivative*)
+der = D[int, x]
+
+Simplify[der]
+
+Out[7]= -(1/2) E^-x (Cos[x]+Sin[x])
+Out[10]= -(1/2) E^-x (Cos[x]-Sin[x])+1/2 E^-x (Cos[x]+Sin[x])
+Out[12]= E^-x Sin[x]

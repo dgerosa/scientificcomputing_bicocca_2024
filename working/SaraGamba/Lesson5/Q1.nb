@@ -1,0 +1,21 @@
+In[53]:=
+(*Q3*)
+(*author: Sara Gamba*)
+(*Equation*)
+equation = x Log[x] - 3 x + 10 == 6;
+
+(*Symbolic*)
+symbolic = Solve[equation, x]
+
+(*Numericals*)
+numericals = NSolve[equation, x]
+
+(*Numerical FindRoot*)
+root1 = FindRoot[equation, {x, 2}]
+root2 = FindRoot[equation, {x, 10}]
+During evaluation of In[53]:= Solve::ifun: Inverse functions are being used by Solve, so some solutions may not be found; use Reduce for complete solution information.
+Out[59]= {{x->-(4/ProductLog[-(4/E^3)])},{x->-(4/ProductLog[-1,-(4/E^3)])}}
+During evaluation of In[53]:= NSolve::ifun: Inverse functions are being used by NSolve, so some solutions may not be found; use Reduce for complete solution information.
+Out[62]= {{x->1.56883},{x->15.5229}}
+Out[65]= {x->1.56883}
+Out[66]= {x->15.5229}
