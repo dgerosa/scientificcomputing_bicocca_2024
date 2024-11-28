@@ -1,0 +1,28 @@
+name: Validate README for Sara
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Check if README.md contains Sara
+      id: check-readme
+      run: |
+        if ! grep -q "Sara" README.md; then
+          echo "README.md does not contain 'Sara'."
+          exit 1
+        fi
+
+    - name: Allow Commit (if README contains Sara)
+      run: echo "README.md validation passed. Proceeding with commit."
