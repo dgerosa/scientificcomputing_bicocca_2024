@@ -2,6 +2,8 @@
 Q1: Machine Precision
 author: Sara Gamba
 """
+import argparse
+
 def MachinePrecision():
     eps=1.  
     while (1+eps)!=1:
@@ -13,5 +15,8 @@ def MachinePrecision():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Machine Precision. Just run the code!')
+    args = parser.parse_args()
+    
     MachinePrecision()
 

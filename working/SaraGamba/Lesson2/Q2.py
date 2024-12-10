@@ -5,6 +5,7 @@ author: Sara Gamba
 import numpy as np 
 import matplotlib.pyplot as plt
 from urllib.request import urlopen
+import argparse
 
 def Histogramming():
     
@@ -35,4 +36,7 @@ def Histogramming():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Histograms. Just run the code!')
+    args = parser.parse_args()
+    
     Histogramming()

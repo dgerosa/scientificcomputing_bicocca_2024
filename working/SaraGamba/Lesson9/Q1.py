@@ -3,7 +3,7 @@ Q1: Play with expressions
 author: Sara Gamba
 """
 import sympy as sym
-
+import argparse
 def evaluation():
     x = sym.symbols("x")
     expr = x*sym.exp(-x) + x*(1-x)
@@ -13,4 +13,7 @@ def evaluation():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Play with expressions. Just run the code!')
+    args = parser.parse_args()
+    
     evaluation()

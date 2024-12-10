@@ -3,6 +3,7 @@ Q2: Consistent plotting
 author: Sara Gamba
 """
 import matplotlib.pyplot as plt
+import argparse
 
 def sarasplot(function):
     def wrapper(*args, **kwargs):
@@ -43,4 +44,7 @@ def example_plot():
 
 # call decorated function
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Consistent plotting. Just run the code!')
+    args = parser.parse_args()
+    
     example_plot()

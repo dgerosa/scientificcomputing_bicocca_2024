@@ -5,6 +5,7 @@ author: Sara Gamba
 import numpy as np
 from scipy import optimize
 import matplotlib.pyplot as plt
+import argparse
 
 def f(x): #function
     return x**3 - 6*x**2 + 11*x - 6
@@ -34,5 +35,6 @@ def BasinsofAttraction():
     plt.show()
 
 if __name__ == "__main__":
-
+    parser = argparse.ArgumentParser(description='Basins of attraction. Just run the code!')
+    args = parser.parse_args()
     BasinsofAttraction()

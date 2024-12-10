@@ -4,6 +4,7 @@ author: Sara Gamba
 """
 import matplotlib.pyplot as plt
 import numpy as np
+import argparse
 
 def Planets():
 
@@ -24,4 +25,6 @@ def Planets():
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Planetary positions. Just run the code!')
+    args = parser.parse_args()
     Planets()

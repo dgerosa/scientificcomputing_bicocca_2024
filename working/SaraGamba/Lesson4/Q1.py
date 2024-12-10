@@ -6,7 +6,7 @@ import numpy as np
 from scipy import integrate
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-
+import argparse
 def power_law_log(x, a, b): #fit function
     return  np.log(x) * a + b 
 
@@ -52,5 +52,6 @@ def NumericalIntegrals():
 
 
 if __name__ == "__main__":
-
+    parser = argparse.ArgumentParser(description='Simple numerical integral. Just run the code!')
+    args = parser.parse_args()
     NumericalIntegrals()
