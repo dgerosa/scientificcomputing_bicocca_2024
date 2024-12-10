@@ -66,12 +66,12 @@ def test_scaling():
     plt.savefig("test_scaling.pdf")
 
 
-def create_benchmark(file_name="benchmark.json"):
+def create_benchmark(file_name="./working/SaraGamba/Lesson8/benchmark.json"):
     # it creates a benchmark and saves results
     size = 1000000
     a1 = np.random.rand(size)
     a2 = np.random.rand(size)
-    np.savez("test_benchmark.npz", a1=a1, a2=a2)
+    np.savez("./working/SaraGamba/Lesson8/test_benchmark.npz", a1=a1, a2=a2)
     
     ex_sum = parallel_sum(a1, a2, num_cores=4)
     benchmark = {"ex_sum": ex_sum}
@@ -82,9 +82,9 @@ def create_benchmark(file_name="benchmark.json"):
 class RegressionTest(unittest.TestCase):
     #regression test
     def test_regression(self):
-        with open("benchmark.json", "r") as file:
+        with open("./working/SaraGamba/Lesson8/benchmark.json", "r") as file:
             benchmark = json.load(file)
-        data = np.load("test_benchmark.npz")
+        data = np.load("./working/SaraGamba/Lesson8/test_benchmark.npz")
         a1 = data["a1"]
         a2 = data["a2"]
         new = parallel_sum(a1, a2, num_cores=4)
