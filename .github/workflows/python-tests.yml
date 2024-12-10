@@ -8,6 +8,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
@@ -19,5 +20,6 @@ jobs:
         pip install numpy matplotlib
 
     - name: Run Unit Tests
-      run: python "working/SaraGamba/Lesson8/Q2.py" --run-tests
+      run: |
+        python "working/SaraGamba/Lesson8/Q2.py" --run-tests
 
