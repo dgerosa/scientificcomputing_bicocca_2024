@@ -11,6 +11,7 @@ os.environ['MKL_NUM_THREADS'] = '1'
 import multiprocessing
 import time
 import os
+import json
 import matplotlib.pyplot as plt
 
 # sum of two sub arrays
@@ -62,7 +63,22 @@ def test_scaling():
     plt.xlabel('Cores')
     plt.ylabel('Time (s)')
     plt.title('Scaling')
-    plt.show()
+    plt.savefig("test_scaling.pdf")
+
+
+def create_benchmark(file_name="benchmark.json"):
+    """Crea un benchmark salvando i dati e i risultati attesi."""
+    size = 1000000
+    array1 = np.random.rand(size)
+    array2 = np.random.rand(size)
+    np.savez("test_data.npz", array1=array1, array2=array2)
+    
+    expected_sum = parallel_sum(array1, array2, num_cores=4)
+    benchmark = {"expected_sum": expected_sum}
+    with open(file_name, "w") as f:
+        json.dump(benchmark, f)
+    print(f"Benchmark salvato in {file_name}")
+
 
 if __name__ == "__main__":
     
@@ -70,3 +86,4 @@ if __name__ == "__main__":
     print(f"Number of cores in the CPU: {num_cores}")
     
     test_scaling()
+    create_benchmark()
