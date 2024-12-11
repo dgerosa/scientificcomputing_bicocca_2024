@@ -16,13 +16,13 @@ def Histogramming(url_file):
     url = urlopen(url_file) #openurl
     data = url.read() #read data
 
-    file = "sample.txt" #new text file name 
+    file = "./working/SaraGamba/Lesson2/sample.txt" #new text file name 
     file_ = open(file, 'wb') #create file
     file_.write(data) #write data on the file
     file_.close() #close file
 
 
-    column_data = np.loadtxt("sample.txt", usecols=1) #use first column of the file
+    column_data = np.loadtxt(file, usecols=1) #use first column of the file
     bin_content, bin_edges = np.histogram(column_data) #save bins and bin contents
 
     center = (bin_edges[:-1] + bin_edges[1:]) / 2 #bin center 
@@ -36,8 +36,8 @@ def Histogramming(url_file):
 
     print("Printing bin centers\n", result)
 
-    plt.savefig("hist.pdf")
-    print("Histogram correctly saved.")
+    plt.savefig("./working/SaraGamba/Lesson2/hist.pdf")
+    print("./working/SaraGamba/Lesson2/hist.pdf correctly saved.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Histograms. Just run the code!')

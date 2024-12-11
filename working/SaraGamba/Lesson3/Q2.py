@@ -25,8 +25,8 @@ def Planets():
     for txt, distance, period in zip(names,a,P):
         plt.annotate(txt,(distance,period)) 
 
-    plt.savefig("planets.pdf")
-    print("planets.pdf correctly saved")
+    plt.savefig("./working/SaraGamba/Lesson3/planets.pdf")
+    print("./working/SaraGamba/Lesson3/planets.pdf correctly saved")
 
 
 if __name__ == "__main__":

@@ -29,8 +29,8 @@ def sarasplot(function):
         figure = function(*args, **kwargs)
         
         # save
-        figure.savefig(f"{function.__name__}.pdf", format="pdf")
-        print(f"Plot saved as {function.__name__}.pdf")
+        figure.savefig(f"./working/SaraGamba/Lesson7/{function.__name__}.pdf", format="pdf")
+        print(f"Plot saved as ./working/SaraGamba/Lesson7/{function.__name__}.pdf")
         
         return figure
     return wrapper

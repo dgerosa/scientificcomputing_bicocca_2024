@@ -1,0 +1,7 @@
+Aiuto per runnare i programmi:
+python working/SaraGamba/LessonX/QY.py --help
+Per runnare i programmi:
+python working/SaraGamba/LessonX/QY.py (--options)
+
+X, Y a seconda di quale file si voglia runnare e in quale lezione.
+I file creati (plot), vengono salvati direttamente nelle cartelle working/SaraGamba/LessonX/

@@ -58,8 +58,8 @@ def NumericalIntegrals():
     #Fit results
     print(f"Fit of exp(N,a)*c \n  a = {popt[0]:.2f} \n b = {popt[1]:.2f}") #print results
 
-    plt.savefig("fit.pdf")
-    print("fit.pdf correctly saved.")
+    plt.savefig("./working/SaraGamba/Lesson4/fit.pdf")
+    print("./working/SaraGamba/Lesson4/fit.pdf correctly saved.")
 
 
 

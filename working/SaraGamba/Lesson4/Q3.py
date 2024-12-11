@@ -41,8 +41,8 @@ def BasinsofAttraction():
     print("Roots of the function x**3 - 6*x**2 + 11*x - 6:", roots)
     print("Converged?:",rs)
     plt.grid()
-    plt.savefig("bas.pdf")
-    print("bas.pdf correctly saved.")
+    plt.savefig("./working/SaraGamba/Lesson4/bas.pdf")
+    print("./working/SaraGamba/Lesson4/bas.pdf correctly saved.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Basins of attraction. Just run the code!')

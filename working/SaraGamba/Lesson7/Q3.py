@@ -79,8 +79,8 @@ def test_scaling():
     plt.xlabel('Cores')
     plt.ylabel('Time (s)')
     plt.title('Scaling')
-    plt.savefig("test_scaling.pdf")
-    print("test_scaling.pdf correctly saved.")
+    plt.savefig("./working/SaraGamba/Lesson7/test_scaling.pdf")
+    print("./working/SaraGamba/Lesson7/test_scaling.pdf correctly saved.")
 
 
 if __name__ == "__main__":

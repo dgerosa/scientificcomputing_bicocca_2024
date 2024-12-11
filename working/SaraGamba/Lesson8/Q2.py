@@ -79,7 +79,8 @@ def test_scaling():
     plt.xlabel('Cores')
     plt.ylabel('Time (s)')
     plt.title('Scaling')
-    plt.savefig("test_scaling.pdf")
+    plt.savefig("./working/SaraGamba/Lesson8/test_scaling.pdf")
+    print("./working/SaraGamba/Lesson8/test_scaling.pdf correctly saved.")
 
 
 def create_benchmark(file_name="./working/SaraGamba/Lesson8/benchmark.json"):

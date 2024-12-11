@@ -23,8 +23,8 @@ def draw_circles(R,x0,y0,color):
     ax.set_xlabel("x")
     ax.set_ylabel("y")
     ax.fill(x, y, color=color)
-    plt.savefig("cicle.pdf")
-    print("circle.pdf correctly saved.")
+    plt.savefig("./working/SaraGamba/Lesson3/cicle.pdf")
+    print("./working/SaraGamba/Lesson3/circle.pdf correctly saved.")
 
 if __name__ == "__main__":
 
