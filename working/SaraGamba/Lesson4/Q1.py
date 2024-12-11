@@ -7,11 +7,23 @@ from scipy import integrate
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import argparse
-def power_law_log(x, a, b): #fit function
+
+
+def power_law_log(x, a, b): 
+    """
+    power_law_log
+    param: a (exp), b constant
+    return: fit function
+    """
     return  np.log(x) * a + b 
 
 
 def NumericalIntegrals():
+    """
+    NumericalIntegrals
+    param:
+    return: different type of integrals and fit of integrate.simps varying the number of sample points
+    """
     xmin=-5.
     xmax=5.
     function = lambda x: np.exp(-x*x) #function to integrate
@@ -46,7 +58,8 @@ def NumericalIntegrals():
     #Fit results
     print(f"Fit of exp(N,a)*c \n  a = {popt[0]:.2f} \n b = {popt[1]:.2f}") #print results
 
-    plt.show()
+    plt.savefig("fit.pdf")
+    print("fit.pdf correctly saved.")
 
 
 

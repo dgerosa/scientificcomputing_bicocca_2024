@@ -16,7 +16,11 @@ titles = ["don quixote",
           "the great gatsby"]
 
 def UpperCaseFunction(list_of_titles):
-    """Loop through the list and capitalize each word in each title"""
+    """
+    UpperCaseFunction
+    param: list of titles
+    return: capitalize each word in each title
+    """
     list_of_titles = [title.title() for title in list_of_titles]
     return list_of_titles
 

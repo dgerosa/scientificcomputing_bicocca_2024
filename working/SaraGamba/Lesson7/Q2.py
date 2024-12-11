@@ -7,7 +7,11 @@ import argparse
 
 def sarasplot(function):
     def wrapper(*args, **kwargs):
-        # set default plot style
+        """
+        wrapper
+        param: *args, **kwargs
+        return: set default plot style
+        """
         plt.rcParams.update({
             'font.size': 10,          # font size
             'axes.titlesize': 14,     # title size
@@ -31,9 +35,14 @@ def sarasplot(function):
         return figure
     return wrapper
 
-# example
+
 @sarasplot
 def example_plot():
+    """
+    example_plot
+    param:
+    return: figure of example
+    """
     figure, ax = plt.subplots()
     ax.plot([0, 1, 2], [0, 1, 4], label="Example")
     ax.set_title("Example Plot")

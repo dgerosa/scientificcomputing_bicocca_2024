@@ -8,6 +8,11 @@ import argparse
 
 
 def draw_circles(R,x0,y0,color):
+    """
+    draw_circles
+    param: Radius, circle center points, fill color 
+    return: pdf of the circle created
+    """
     angle=np.linspace(0, 2*np.pi, num=1000)
     x=R*np.cos(angle)+x0
     y=R*np.sin(angle)+y0
@@ -18,7 +23,8 @@ def draw_circles(R,x0,y0,color):
     ax.set_xlabel("x")
     ax.set_ylabel("y")
     ax.fill(x, y, color=color)
-    plt.show()
+    plt.savefig("cicle.pdf")
+    print("circle.pdf correctly saved.")
 
 if __name__ == "__main__":
 

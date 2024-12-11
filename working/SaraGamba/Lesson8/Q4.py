@@ -9,19 +9,34 @@ import timeit
 from numba import njit
 import argparse
 
-def slow(): #slow function
+def slow():
+    """
+    slow
+    param:
+    return: slow way of summing i**2 a large number of times
+    """
     sum=0
     for i in range(1, 10000000):
         sum+=i**2
     return sum
 
-def np_func(): #numpy function
+def np_func(): 
+    """
+    np_func
+    param:
+    return: numpy way of summing i**2 a large number of times
+    """
     a = np.arange(1, 10000000)
     sum = np.sum(a**2)
     return sum
 
-@njit     #numba decorator
+@njit    
 def numba_func():
+    """
+    numba_func
+    param:
+    return: numba way of summing i**2 a large number of times
+    """
     sum = 0
     for i in range(1, 10000000):
         sum+=i**2
@@ -35,7 +50,7 @@ if __name__ == "__main__":
 
     stats = pstats.Stats('profile_results') #stat results
     stats.strip_dirs().sort_stats('time').print_stats(10)  
-    #printing time
+    #printing the time
     print("Original:{} s".format(timeit.timeit('slow()', globals=globals(), number=10))) 
     print("Numpy:{} s".format(timeit.timeit('np_func()', globals=globals(), number=10)))
     print("Numba:{} s".format(timeit.timeit('numba_func()', globals=globals(), number=10)))

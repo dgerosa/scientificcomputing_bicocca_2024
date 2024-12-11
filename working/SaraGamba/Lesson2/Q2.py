@@ -7,9 +7,13 @@ import matplotlib.pyplot as plt
 from urllib.request import urlopen
 import argparse
 
-def Histogramming():
-    
-    url = urlopen('https://raw.githubusercontent.com/sbu-python-summer/python-tutorial/master/day-3/sample.txt') #openurl
+def Histogramming(url_file):
+    '''
+    Histogramming
+    parameter: url file
+    return: histogram
+    '''
+    url = urlopen(url_file) #openurl
     data = url.read() #read data
 
     file = "sample.txt" #new text file name 
@@ -32,11 +36,11 @@ def Histogramming():
 
     print("Printing bin centers\n", result)
 
-    plt.show()
-
+    plt.savefig("hist.pdf")
+    print("Histogram correctly saved.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Histograms. Just run the code!')
     args = parser.parse_args()
     
-    Histogramming()
+    Histogramming('https://raw.githubusercontent.com/sbu-python-summer/python-tutorial/master/day-3/sample.txt')

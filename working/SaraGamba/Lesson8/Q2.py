@@ -14,12 +14,23 @@ import os
 import json
 import matplotlib.pyplot as plt
 import unittest
-# sum of two sub arrays
+
+
+
 def sum_sub_array(start, end, a1, a2):
+    """
+    sum_sub_array
+    param: start of the sub array, end of the sub array, array 1 and array 2
+    return: sum of two sub arrays
+    """
     return np.sum(a1[start:end] + a2[start:end])
 
-# sum of two arrays, parallel
 def parallel_sum(a1, a2, num_cores):
+    """
+    parallel_sum
+    param: array 1 , array 2 and number of cores
+    return: sum of two arrays, parallel
+    """
     size = len(a1)
     chunk_size = size // num_cores #nearest integer
     pool = multiprocessing.Pool(num_cores) #creation of simultaneous processes
@@ -41,8 +52,13 @@ def parallel_sum(a1, a2, num_cores):
     tot = sum(result.get() for result in results)
     return tot
 
-# test scaling
+
 def test_scaling():
+    """
+    test_scaling
+    param:
+    return: plot of the scaling test performed
+    """
     size = int(1e7)
     a1 = np.random.rand(size)
     a2 = np.random.rand(size)
@@ -67,7 +83,11 @@ def test_scaling():
 
 
 def create_benchmark(file_name="./working/SaraGamba/Lesson8/benchmark.json"):
-    # it creates a benchmark and saves results
+    """
+    create_benchmark
+    param: file name
+    return: it creates a benchmark and saves results
+    """
     size = 1000000
     a1 = np.random.rand(size)
     a2 = np.random.rand(size)
@@ -80,8 +100,13 @@ def create_benchmark(file_name="./working/SaraGamba/Lesson8/benchmark.json"):
     print(f"Benchmark correctly saved in {file_name}")
 
 class RegressionTest(unittest.TestCase):
-    #regression test
+    
     def test_regression(self):
+        """
+        test_regression
+        param:
+        return: regression test with the saved benchmark
+        """
         with open("./working/SaraGamba/Lesson8/benchmark.json", "r") as file:
             benchmark = json.load(file)
         data = np.load("./working/SaraGamba/Lesson8/test_benchmark.npz")
@@ -97,18 +122,33 @@ class RegressionTest(unittest.TestCase):
 class TestLesson7Q3(unittest.TestCase):
 
     def test_sum_sub_array(self):
+        """
+        test_sum_sub_array
+        param:
+        return: test the sum of sub arrays
+        """
         a1 = np.array([1, 2, 3, 4, 5])
         a2 = np.array([5, 4, 3, 2, 1])
         res = sum_sub_array(1, 4, a1, a2)
         self.assertEqual(res, 18) 
 
     def test_parallel_sum(self):
+        """
+        test_parallel_sum
+        param:
+        return: test the parallel sum
+        """
         a1 = np.array([1, 2, 3, 4, 5])
         a2 = np.array([5, 4, 3, 2, 1])
         res = parallel_sum(a1, a2, num_cores=2)
         self.assertEqual(res, 30)  
 
     def test_parallel_sum_large_array(self):
+        """
+        test_parallel_sum_large_array
+        param:
+        return: test the parallel sum of large and random arrays
+        """
         size = 1000000
         a1 = np.random.rand(size)
         a2 = np.random.rand(size)

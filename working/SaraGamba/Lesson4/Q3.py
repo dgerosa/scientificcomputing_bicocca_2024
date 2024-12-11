@@ -7,11 +7,20 @@ from scipy import optimize
 import matplotlib.pyplot as plt
 import argparse
 
-def f(x): #function
+def f(x): 
+    """
+    f
+    param: x
+    return: function
+    """
     return x**3 - 6*x**2 + 11*x - 6
 
 def BasinsofAttraction():
-    #plot function
+    """
+    BasinsofAttraction
+    param: 
+    return: Roots of the function and plot
+    """
     x = np.linspace(0, 4, 500)
     y = f(x)
     plt.plot(x, y, color='black')
@@ -32,7 +41,8 @@ def BasinsofAttraction():
     print("Roots of the function x**3 - 6*x**2 + 11*x - 6:", roots)
     print("Converged?:",rs)
     plt.grid()
-    plt.show()
+    plt.savefig("bas.pdf")
+    print("bas.pdf correctly saved.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Basins of attraction. Just run the code!')

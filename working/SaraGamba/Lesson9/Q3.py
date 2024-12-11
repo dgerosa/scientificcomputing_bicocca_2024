@@ -7,6 +7,11 @@ import sympy as sym
 import argparse
 
 def integration_and_derivation():
+    """
+    integration_and_derivation
+    param: 
+    return: function integral, derivative and simplified version of the derivative
+    """
     x = sym.symbols("x")
     expr = sym.sin(x)*sym.exp(-x)
     integral = sym.integrate(expr)

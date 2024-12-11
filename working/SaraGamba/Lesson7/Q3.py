@@ -15,12 +15,22 @@ import json
 import matplotlib.pyplot as plt
 import argparse
 
-# sum of two sub arrays
+
 def sum_sub_array(start, end, a1, a2):
+    """
+    sum_sub_array
+    param: start of the sub array, end of the sub array, array 1 and array 2
+    return: sum of two sub arrays
+    """
     return np.sum(a1[start:end] + a2[start:end])
 
-# sum of two arrays, parallel
+
 def parallel_sum(a1, a2, num_cores):
+    """
+    parallel_sum
+    param: array 1 , array 2 and number of cores
+    return: sum of two arrays, parallel
+    """
     size = len(a1)
     chunk_size = size // num_cores #nearest integer
     pool = multiprocessing.Pool(num_cores) #creation of simultaneous processes
@@ -42,8 +52,13 @@ def parallel_sum(a1, a2, num_cores):
     tot = sum(result.get() for result in results)
     return tot
 
-# test scaling
+
 def test_scaling():
+    """
+    test_scaling
+    param:
+    return: plot of the scaling test performed
+    """
     size = int(1e7)
     a1 = np.random.rand(size)
     a2 = np.random.rand(size)

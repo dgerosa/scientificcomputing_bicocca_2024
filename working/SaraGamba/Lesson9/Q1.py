@@ -4,7 +4,13 @@ author: Sara Gamba
 """
 import sympy as sym
 import argparse
+
 def evaluation():
+    """
+    evaluation
+    param:
+    return: evaluates the function in 5 different points
+    """
     x = sym.symbols("x")
     expr = x*sym.exp(-x) + x*(1-x)
     xval = [0.,0.1,0.2,0.4,0.8]
