@@ -94,6 +94,11 @@ That should be a total of **2 x 8 = 16** exercises. Hopefully you will have fini
 In general, I'm always happy to chat coding and science with you. My office is room U2-2007. 
 
 
+## Past editions
+
+- Current: [dgerosa.github.io/astrostatistics_bicocca](https://dgerosa.github.io/scientificcomputing_bicocca)
+- 2023: [github.com/dgerosa/astrostatistics_bicocca_2024](https://github.com/dgerosa/scientificcomputing_bicocca_2023)
+
 ## Credits
 
 This class is built on top of that taught by [Michael Zingale](https://github.com/zingale) at Stony Brook University: [https://sbu-python-class.github.io](https://sbu-python-class.github.io/python-science/Introduction.html) with changes and additions from a number of other sources, some from myself. 
