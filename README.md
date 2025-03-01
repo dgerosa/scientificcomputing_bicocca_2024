@@ -97,7 +97,7 @@ In general, I'm always happy to chat coding and science with you. My office is r
 ## Past editions
 
 - Current: [dgerosa.github.io/astrostatistics_bicocca](https://dgerosa.github.io/scientificcomputing_bicocca)
-- 2023: [github.com/dgerosa/astrostatistics_bicocca_2024](https://github.com/dgerosa/scientificcomputing_bicocca_2023)
+- 2023: [github.com/dgerosa/astrostatistics_bicocca_2023](https://github.com/dgerosa/scientificcomputing_bicocca_2023)
 
 ## Credits
 
