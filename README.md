@@ -96,7 +96,7 @@ In general, I'm always happy to chat coding and science with you. My office is r
 
 ## Past editions
 
-- Current: [dgerosa.github.io/scientificcomputing_bicocca](https://dgerosa.github.io/scientificcomputing_bicocca)
+- Current: [dgerosa.github.io/scientificcomputing](https://dgerosa.github.io/scientificcomputing)
 - 2023: [github.com/dgerosa/scientificcomputing_bicocca_2023](https://github.com/dgerosa/scientificcomputing_bicocca_2023)
 
 ## Credits
